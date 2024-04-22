@@ -75,12 +75,12 @@ const About = () => {
                     <div className='col-span-12 space-y-2.5'>
                         <div className='lg:mr-16'>
                             <p className=" leading-7">
-                                I'm a French Web Developper from Rennes. I enjoy creating simple and
+                                Im a French Web Developper from Rennes. I enjoy creating simple and
                                 functionnal website for start-ups..
                             </p>
                             <p className="text-gray-lite leading-7 mt-2.5 dark:text-color-910">
                                 Mon objectif est de vous créer un site
-                                d'e-commerce minimaliste le plus
+                                de e-commerce minimaliste le plus
                                 rapidement et efficacement possible en
                                 utilisant les dernières technologies 
                                 <span className=" font-bold px-1 text-cyan-500 ">
