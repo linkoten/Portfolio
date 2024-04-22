@@ -14,7 +14,7 @@ import Works from '@/components/bloc/Works';
 import { Contact } from '@/components/bloc/Contact';
 import Header2 from '@/components/bloc/Header2';
 
-const page = () => {
+const Page = () => {
     const [currentSection, setCurrentSection] = useState('/');
 
     const handleSectionChange = (section: string) => {
@@ -53,6 +53,6 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;
 
                         //Ajouter le Header 2 après <section>
