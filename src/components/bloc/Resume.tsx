@@ -81,7 +81,7 @@ const Resume = () => {
             <div className='container bg-color-810 dark:bg-[#0D0D0D] py-12 px-4 sm:px-5 md:px-10 lg:px-20'>
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
                     <motion.div 
-                    initial={{opacity: 0, scale:0, x:-200, y:200}}
+                    initial={{opacity: 0, scale:0, x:-100, y:100}}
                     whileInView={{opacity: 1, scale:1, x:0, y:0}}
                     transition={{ duration: 1, type:"spring"}}
                     className='col-span-1 border-[2px] border-[#212425] rounded-lg p-6 hover:ring-2 hover:ring-sky-500 shadow-lg shadow-slate-900'>

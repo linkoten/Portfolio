@@ -95,7 +95,7 @@ const Works = () => {
                         Personal Project
                     </li>
                 </ul>
-                <div className='grid grid-cols-1 sm:grid-cols-2 sm:gap-8'>
+                <div className='grid grid-cols-2 gap-8 px-4 md:px-0'>
                     <div className='space-y-8'>
                         {premiereGrille.map((item, index) => (
                             <motion.div
@@ -117,7 +117,7 @@ const Works = () => {
                                     <span className='pt-5 text-sm md:text-base font-normal text-gray-lite block '>
                                     {item.paragraph}
                                     </span>
-                                    <h2 className='font-medium cursor-pointer text-xl duration-300 transition  hover:text-[#FA5252] text-white mt-2'>
+                                    <h2 className='font-medium cursor-pointer text-base sm:text-xl duration-300 transition  hover:text-[#FA5252] text-white mt-2'>
                                         {item.title}
                                     </h2>
                                 </div>
@@ -142,10 +142,10 @@ const Works = () => {
                                             className=' mx-auto cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto '
                                         />
                                     </div>
-                                    <span className='pt-5 text-sm  font-normal text-gray-lite block '>
+                                    <span className='pt-5 text-sm md:text-base font-normal text-gray-lite block '>
                                     {item.paragraph}
                                     </span>
-                                    <h2 className='font-medium cursor-pointer text-xl duration-300 transition  hover:text-[#FA5252] text-white mt-2'>
+                                    <h2 className='font-medium cursor-pointer text-base sm:text-xl duration-300 transition  hover:text-[#FA5252] text-white mt-2'>
                                          {item.title}
                                     </h2>
                                 </div>
