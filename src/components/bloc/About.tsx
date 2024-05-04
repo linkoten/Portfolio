@@ -68,16 +68,16 @@ const About = () => {
         animate={{ opacity: 1, scale: 1, x:0 }}
         exit={{scale: 0.5}}
         transition={{ duration: 0.5, ease:"backInOut", type:"spring" }}
-         className='lg:rounded-2xl bg-slate-800 text-slate-300 hover:brightness-125 hover:ring-2 hover:ring-emerald-500 shadow-lg shadow-slate-900 pb-8'>
+         className='mx-8 md:mx-0 rounded-2xl bg-slate-800 text-slate-300 hover:brightness-125 hover:ring-2 hover:ring-emerald-500 shadow-lg shadow-slate-900 pb-8'>
             <div className='pt-12 md:py-12 px-2 sm:px-5 md:px-10 lg:px-14 '>
                 <div className=' flex items-center space-x-4'>
-                <h2 className='after-effect after:left-52 text-5xl text-white'>
+                <h2 className='text-2xl after-effect after:left-52 md:text-5xl text-white'>
                     About Me
                 </h2> 
                 <Separator className=" w-1/3 bg-gradient-to-r from-sky-300 to-blue-800" />
                 </div>
 
-                <div className=' pt-4 md:pt-[30px] items-center '>
+                <div className=' pt-4 md:pt-[30px] items-center text-sm md:text-base'>
                     <div className='col-span-12 space-y-2.5'>
                         <div className='lg:mr-16'>
                             <p className=" leading-7">
@@ -98,7 +98,7 @@ const About = () => {
                 </div>
             </div>
             <section className='pb-12 px-2 sm:px-5 md:px-10 lg:px-14 '>
-                <h3 className='text-[35px] dark:text-white font-medium pb-5 text-white'>
+                <h3 className='pl-8 pt-8 md:pt-0 md:pl-0 text-2xl md:text-4xl dark:text-white font-medium pb-5 text-white'>
                     What I do!
                 </h3>
 
@@ -109,7 +109,7 @@ const About = () => {
                             whileInView={{opacity: 1, scale:1, y:0}}
                             transition={{ duration: 1, type:"spring"}}
                             key={index}
-                            className='about-box dark:bg-transparent border rounded-xl p-4 bg-slate-700 hover:brightness-125 hover:ring-blue-700 hover:ring-2 shadow-lg shadow-slate-500 mb-4'
+                            className='mx-8 md:mx-0 about-box dark:bg-transparent border rounded-xl p-4 bg-slate-700 hover:brightness-125 hover:ring-blue-700 hover:ring-2 shadow-lg shadow-slate-500 mb-4'
                         >
                             
                             <div className='flex justify-around py-4'>

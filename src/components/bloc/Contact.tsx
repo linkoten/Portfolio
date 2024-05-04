@@ -54,19 +54,19 @@ export function Contact() {
         animate={{ opacity: 1, scale: 1, x:0 }}
         exit={{scale: 0.5}}
         transition={{ duration: 0.5, ease:"backInOut", type:"spring" }}
-        className='lg:rounded-2xl bg-slate-800 text-slate-300 hover:brightness-125 hover:ring-2 hover:ring-emerald-500 shadow-lg shadow-slate-900 '>
+        className='mx-8 md:mx-0 rounded-2xl bg-slate-800 text-slate-300 hover:brightness-125 hover:ring-2 hover:ring-emerald-500 shadow-lg shadow-slate-900 '>
             <div className='container mb-8 px-4 sm:px-5 md:px-10 lg:px-[60px]'>
                 <div className='py-12'>
                     <div className=' flex items-center space-x-4 pb-10'>
-                    <h2 className='after-effect after:left-52 text-5xl text-white '>
+                    <h2 className='text-2xl after-effect after:left-52 md:text-4xl text-white '>
                         Contact
                     </h2>
                     <Separator className=" w-1/3 bg-gradient-to-r from-sky-300 to-blue-800" />
 
                     </div>
                     <div className='border-[#212425] border-2 md:p-[48px] p-4 bg-color-810 rounded-xl  bg-slate-800 mb-[30px] md:mb-[60px] hover:ring-2 hover:ring-sky-500'>
-                        <h3 className='text-4xl pb-10'>
-                            <span className='text-gray-lite text-[#A6A6A6] '>
+                        <h3 className=' text-center md:text-start text-xl md:text-4xl pb-10'>
+                            <span className=' text-gray-lite text-[#A6A6A6] '>
                                 Feel free to contact me for any
                             </span>
                             <br />
