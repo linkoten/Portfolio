@@ -12,6 +12,8 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
+import { motion, useAnimate, stagger } from 'framer-motion';
+
 
 interface HeaderProps {
     onSectionChange: (section: string) => void;
@@ -49,11 +51,13 @@ const Header2: React.FC<HeaderProps> = ({ onSectionChange }) => {
                     </Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className='bg-slate-800 lg:hidden'>
-                    <DropdownMenuLabel className=' opacity-0 h-0'>
-                        Panel
-                        Positionnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
-                    </DropdownMenuLabel>
+                
                     <DropdownMenuSeparator />
+                    <motion.div
+                    initial={{ opacity: 0, scale: 0.5, y:1000 }}
+                    animate={{ opacity: 1, scale: 1, y:0  }}
+                    exit={{ scale: 0.5 }}
+                    transition={{ duration: 0.5, ease: 'backInOut', type:"spring" }}>
                     <DropdownMenuRadioGroup className=' space-y-2'>
                         <DropdownMenuRadioItem
                             value='top'
@@ -203,6 +207,7 @@ const Header2: React.FC<HeaderProps> = ({ onSectionChange }) => {
                             Contact
                         </DropdownMenuRadioItem>
                     </DropdownMenuRadioGroup>
+                    </motion.div>
                 </DropdownMenuContent>
             </DropdownMenu>
         </div>

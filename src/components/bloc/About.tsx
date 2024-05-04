@@ -7,6 +7,8 @@ import tailwindSVG from '../../../public/tailwind-svgrepo-com (1).svg'
 import shadcnUISVG from '../../../public/shadcnUI.svg'
 import JavascriptSVG from '../../../public/javascript-svgrepo-com.svg'
 import { Separator } from "@/components/ui/separator"
+import { backInOut, motion } from 'framer-motion';
+
 
 
 
@@ -62,7 +64,11 @@ const About = () => {
     ];
 
     return (
-        <div className='lg:rounded-2xl bg-slate-800 text-slate-300 hover:brightness-125 hover:ring-2 hover:ring-emerald-500 shadow-lg shadow-slate-900'>
+        <motion.div  initial={{ opacity: 0, scale: 0.5, x:1000 }}
+        animate={{ opacity: 1, scale: 1, x:0 }}
+        exit={{scale: 0.5}}
+        transition={{ duration: 0.5, ease:"backInOut", type:"spring" }}
+         className='lg:rounded-2xl bg-slate-800 text-slate-300 hover:brightness-125 hover:ring-2 hover:ring-emerald-500 shadow-lg shadow-slate-900 pb-8'>
             <div className='pt-12 md:py-12 px-2 sm:px-5 md:px-10 lg:px-14 '>
                 <div className=' flex items-center space-x-4'>
                 <h2 className='after-effect after:left-52 text-5xl text-white'>
@@ -98,9 +104,12 @@ const About = () => {
 
                 <div className='grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-2 '>
                     {items.map((item, index) => (
-                        <div
+                        <motion.div
+                            initial={{opacity: 0, scale:0, y:200}}
+                            whileInView={{opacity: 1, scale:1, y:0}}
+                            transition={{ duration: 1, type:"spring"}}
                             key={index}
-                            className='about-box dark:bg-transparent border rounded-xl p-4 bg-slate-700 hover:brightness-125 hover:ring-blue-700 hover:ring-2 shadow-lg shadow-slate-500'
+                            className='about-box dark:bg-transparent border rounded-xl p-4 bg-slate-700 hover:brightness-125 hover:ring-blue-700 hover:ring-2 shadow-lg shadow-slate-500 mb-4'
                         >
                             
                             <div className='flex justify-around py-4'>
@@ -133,11 +142,11 @@ const About = () => {
                                     {item.paragraph}
                                 </p>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </section>
-        </div>
+        </motion.div>
     );
 };
 

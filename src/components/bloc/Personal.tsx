@@ -2,10 +2,18 @@ import React from 'react';
 import Image from 'next/image';
 import lol from '../../../public/next-js-svgrepo-com.svg';
 import { Button } from '../ui/button';
+import { motion } from 'framer-motion';
+
 
 const personal = () => {
     return (
-        <div className='col-span-12 lg:col-span-4 lg:h-screen lg:sticky  top-44'>
+        <motion.div 
+        initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.1 }}
+            drag="y"
+  dragConstraints={{ top: 0, bottom: 400 }}
+            className='col-span-12 lg:col-span-4 lg:h-screen lg:sticky  top-44'>
             <div className='w-full mb-6 lg:mb-0 mx-auto relative bg-slate-800 hover:brightness-125 hover:ring-2 hover:ring-emerald-500 text-center px-6 rounded-[20px] mt-[180px] md:mt-[220px] lg:mt-0 shadow-lg shadow-cyan-900 '>
                 <Image
                     src={lol}
@@ -229,7 +237,7 @@ const personal = () => {
                     </a>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 
