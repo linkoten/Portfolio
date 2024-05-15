@@ -1,8 +1,11 @@
 import React from 'react';
 import lol from '../../../public/next-js-svgrepo-com.svg';
+import Logo from '../../../public/Logo.jpg';
+
 import Image from 'next/image';
 import { Separator } from '../ui/separator';
 import { backInOut, motion } from 'framer-motion';
+import { LucideLogOut } from 'lucide-react';
 
 const premiereGrille = [
     {
@@ -39,7 +42,7 @@ const premiereGrille = [
 
 const deuxiemeGrille = [
     {
-        image: lol,
+        image: Logo,
         title: 'Maison-Kerogan',
         paragraph: 'Showcase Site for a Restaurant',
     },
