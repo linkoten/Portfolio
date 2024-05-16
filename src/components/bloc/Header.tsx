@@ -34,7 +34,7 @@ const Header: React.FC<HeaderProps> = ({ onSectionChange }) => {
                 <ul className='flex '>
                     <MotionConfig
                         transition={{
-                            duration: 0.1,
+                            duration: 0.5,
                             ease: 'easeInOut',
                         }}
                     >

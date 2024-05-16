@@ -53,7 +53,7 @@ export function Contact() {
         <motion.div initial={{ opacity: 0, scale: 0.5, x:1000 }}
         animate={{ opacity: 1, scale: 1, x:0 }}
         exit={{scale: 0.5}}
-        transition={{ duration: 0.5, ease:"backInOut", type:"spring" }}
+        transition={{ duration: 1, ease:"backInOut", type:"spring" }}
         className='mx-8 md:mx-0 rounded-2xl bg-slate-800 text-slate-300 hover:brightness-125 hover:ring-2 hover:ring-emerald-500 shadow-lg shadow-slate-900 '>
             <div className='container mb-8 px-4 sm:px-5 md:px-10 lg:px-[60px]'>
                 <div className='py-12'>
