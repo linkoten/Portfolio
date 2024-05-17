@@ -4,6 +4,7 @@ import lol from '../../../public/next-js-svgrepo-com.svg';
 import { Button } from '../ui/button';
 import { motion } from 'framer-motion';
 import photo from '../../../public/2016.png';
+import Link from 'next/link';
 
 
 
@@ -21,7 +22,7 @@ const personal = () => {
                     src={photo}
                     priority
                     alt='Image'
-                    className='w-[240px] absolute left-[50%] transform -translate-x-[50%] h-[280px] drop-shadow-xl mx-auto rounded-[20px] -mt-[180px] object-cover'
+                    className='w-[240px] absolute left-[50%] transform -translate-x-[50%] h-[240px] drop-shadow-xl mx-auto rounded-[20px] -mt-[180px] object-cover'
                 />
 
                 <div className='pt-[100px] pb-8'>
@@ -34,8 +35,8 @@ const personal = () => {
                         Web Developer
                     </h3>
                     <div className='flex justify-center space-x-3'>
-                        <a
-                            href='https://www.facebook.com/'
+                        <Link
+                            href='https://www.facebook.com/francois.catto'
                             target='_blank'
                             rel='noopener noreferrer'
                         >
@@ -54,30 +55,10 @@ const personal = () => {
                                     </svg>
                                 </span>
                             </Button>
-                        </a>
-                        <a
-                            href='https://twitter.com/'
-                            target='_blank'
-                            rel='noopener noreferrer'
-                        >
-                            <Button className=' group bg-slate-900 hover:lg:bg-gradient-to-r from-sky-700 to-blue-700'>
-                                <span className=' text-[#1C9CEA] group-hover:text-white'>
-                                    <svg
-                                        stroke='currentColor'
-                                        fill='currentColor'
-                                        strokeWidth='0'
-                                        viewBox='0 0 512 512'
-                                        height='1em'
-                                        width='1em'
-                                        xmlns='http://www.w3.org/2000/svg'
-                                    >
-                                        <path d='M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z'></path>
-                                    </svg>
-                                </span>
-                            </Button>
-                        </a>
-                        <a
-                            href='https://dribbble.com/'
+                        </Link>
+                       
+                        <Link
+                            href='https://www.malt.fr/profile/francoiscatto?modifyAvailability=true&source=ON_LOGIN'
                             target='_blank'
                             rel='noopener noreferrer'
                         >
@@ -92,32 +73,12 @@ const personal = () => {
                                         width='1em'
                                         xmlns='http://www.w3.org/2000/svg'
                                     >
-                                        <path d='M256 8C119.252 8 8 119.252 8 256s111.252 248 248 248 248-111.252 248-248S392.748 8 256 8zm163.97 114.366c29.503 36.046 47.369 81.957 47.835 131.955-6.984-1.477-77.018-15.682-147.502-6.818-5.752-14.041-11.181-26.393-18.617-41.614 78.321-31.977 113.818-77.482 118.284-83.523zM396.421 97.87c-3.81 5.427-35.697 48.286-111.021 76.519-34.712-63.776-73.185-116.168-79.04-124.008 67.176-16.193 137.966 1.27 190.061 47.489zm-230.48-33.25c5.585 7.659 43.438 60.116 78.537 122.509-99.087 26.313-186.36 25.934-195.834 25.809C62.38 147.205 106.678 92.573 165.941 64.62zM44.17 256.323c0-2.166.043-4.322.108-6.473 9.268.19 111.92 1.513 217.706-30.146 6.064 11.868 11.857 23.915 17.174 35.949-76.599 21.575-146.194 83.527-180.531 142.306C64.794 360.405 44.17 310.73 44.17 256.323zm81.807 167.113c22.127-45.233 82.178-103.622 167.579-132.756 29.74 77.283 42.039 142.053 45.189 160.638-68.112 29.013-150.015 21.053-212.768-27.882zm248.38 8.489c-2.171-12.886-13.446-74.897-41.152-151.033 66.38-10.626 124.7 6.768 131.947 9.055-9.442 58.941-43.273 109.844-90.795 141.978z'></path>
+                                        <path d="m408.4 103.8c-32.5-32.4-67.1-11.4-88.8 10.2L114.8 318.8c-21.7 21.7-44.4 54.7-10.2 88.8c34.1 34.1 67 11.4 88.7-10.3l204.8-204.8c21.7-21.6 42.7-56.3 10.3-88.7zm-195.7-8.4 43.4 43.4 44.1-44.2c3-3 6-5.8 9.1-8.4c-4.6-23.3-17.9-44.4-53.3-44.4c-35.4 0-48.7 21.2-53.2 44.5c3.3 2.9 6.6 5.8 9.9 9.1zm87.5 322.1-44.1-44.1-43.4 43.3c-3.3 3.3-6.5 6.4-9.8 9.2c5 23.8 19 45.5 53.1 45.5c34.2 0 48.3-21.9 53.2-45.7c-3-2.6-6-5.2-9-8.2zm-105.9-217h-83.6c-30.7 0-70 9.7-70 55.5c0 34.3 21.9 48.3 45.8 53.2c2.8-3.2 107.8-108.7 107.8-108.7zm231.5 2.3c-2.6 3-107.9 108.8-107.9 108.8h82.4c30.7 0 70-7.3 70-55.6c0-35.3-21.1-48.6-44.5-53.2zm-204.1-29.7 14.9-14.9-43.3-43.4c-21.7-21.7-54.6-44.4-88.8-10.2c-25 25-19.4 49.4-6.2 69.1c4.1-.3 123.4-.6 123.4-.6zm68.7 165.9-15 15 44.2 44.1c21.7 21.7 56.3 42.7 88.7 10.3c24.2-24.2 18.7-49.7 5.3-70c-4.3.3-123.2.6-123.2.6z"></path>
                                     </svg>
                                 </span>
                             </Button>
-                        </a>
-                        <a
-                            href='https://www.linkedin.com/'
-                            target='_blank'
-                            rel='noopener noreferrer'
-                        >
-                            <Button className=' group bg-slate-900 hover:lg:bg-gradient-to-r from-sky-700 to-blue-700'>
-                                <span className='socialbtn text-[#0072b1] group-hover:text-white'>
-                                    <svg
-                                        stroke='currentColor'
-                                        fill='currentColor'
-                                        strokeWidth='0'
-                                        viewBox='0 0 448 512'
-                                        height='1em'
-                                        width='1em'
-                                        xmlns='http://www.w3.org/2000/svg'
-                                    >
-                                        <path d='M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z'></path>
-                                    </svg>
-                                </span>
-                            </Button>
-                        </a>
+                        </Link>
+                        
                     </div>
 
                     <div className=' p-7 rounded-2xl mt-7 bg-slate-600 text-white hover:ring-2 hover:ring-sky-500'>
